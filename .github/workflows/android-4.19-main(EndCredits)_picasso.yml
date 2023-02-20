@@ -25,7 +25,7 @@ jobs:
         echo "USE_KERNELSU=true" >> $GITHUB_ENV
         echo "USE_KPROBES=true" >> $GITHUB_ENV
         echo "USE_OVERLAYFS=true" >> $GITHUB_ENV
-        echo "NEED_DTBO=true" >> $GITHUB_ENV
+        echo "NEED_DTBO=false" >> $GITHUB_ENV
         echo "MAKE_BOOT_IMAGE=false" >> $GITHUB_ENV
         echo "SOURCE_BOOT_IMAGE=" >> $GITHUB_ENV
 
