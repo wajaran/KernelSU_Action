@@ -20,12 +20,12 @@ jobs:
         echo "TARGET_ARCH=arm64" >> $GITHUB_ENV
         echo "KERNEL_FILE=Image.gz-dtb" >> $GITHUB_ENV
         echo "CLANG_VERSION=r450784e" >> $GITHUB_ENV
-        echo "BUILD_EXTRA_COMMAND=LD=ld.lld" >> $GITHUB_ENV
+        echo "BUILD_EXTRA_COMMAND=LLVM=1 LLVM_IAS=1" >> $GITHUB_ENV
         echo "DISABLE-LTO=true" >> $GITHUB_ENV
         echo "USE_KERNELSU=true" >> $GITHUB_ENV
         echo "USE_KPROBES=true" >> $GITHUB_ENV
         echo "USE_OVERLAYFS=true" >> $GITHUB_ENV
-        echo "NEED_DTBO=false" >> $GITHUB_ENV
+        echo "NEED_DTBO=true" >> $GITHUB_ENV
         echo "MAKE_BOOT_IMAGE=false" >> $GITHUB_ENV
         echo "SOURCE_BOOT_IMAGE=" >> $GITHUB_ENV
 
