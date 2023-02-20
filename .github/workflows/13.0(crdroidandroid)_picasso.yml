@@ -1,4 +1,4 @@
-name: 13.0(crdroidandroid)_
+name: 13.0(crdroidandroid)_picasso
 on:
   watch:
     types: [started]
